@@ -16,18 +16,24 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: website/app/package-lock.json
+          # Removing cache to avoid the path resolution issues
+
+      - name: Debug directory structure
+        run: |
+          ls -la
+          find . -name "package.json" -type f
 
       - name: Install dependencies 📦
         working-directory: website/app
-        run: npm ci
+        run: npm install
+        # Using npm install instead of npm ci to ensure it works even without a lock file
 
       - name: Build 🏗️
+        working-directory: website/app
         run: npm run build
 
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: out
+          folder: website/app/out
           branch: gh-pages
