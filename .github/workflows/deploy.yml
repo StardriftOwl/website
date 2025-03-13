@@ -24,12 +24,12 @@ jobs:
           find . -name "package.json" -type f
 
       - name: Install dependencies 📦
-        working-directory: website/app
+        working-directory: app
         run: npm install
         # Using npm install instead of npm ci to ensure it works even without a lock file
 
       - name: Build 🏗️
-        working-directory: website/app
+        working-directory: app
         run: npm run build
 
       - name: Deploy to GitHub Pages 🚀
