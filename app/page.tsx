@@ -1,4 +1,10 @@
 // import { BlogPosts } from 'app/components/posts'
+/*
+Credits:
+This code was copied from the Next.js Portfolio Starter Kit.
+Source: https://vercel.com/templates/next.js/portfolio-starter-kit
+© 2025 MIT Licensed
+*/
 
 export default function Page() {
   return (
