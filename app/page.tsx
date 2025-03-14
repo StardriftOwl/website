@@ -13,9 +13,8 @@ export default function Page() {
         Star Wong
       </h1>
       <p className="mb-4">
-        {`Aspiring Unreal Engine technical artist with strong foundations in Computer 
-        Science and Mathematics from the University of Washington Bothell. Graduating December 2025. 
-        Self-taught 2D/3D artist.`}
+        {`Aspiring Unreal Engine (UE) technical artist. Computer Science student @ University of Washington - Bothell campus. 
+        Graduating December 2025. Self-taught 2D/3D artist.`}
       </p>
       <div className="my-8">
         {/* <BlogPosts /> */}
