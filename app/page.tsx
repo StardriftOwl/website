@@ -14,7 +14,7 @@ export default function Page() {
       </h1>
       <p className="mb-4">
         {`Aspiring Unreal Engine (UE) technical artist. Computer Science student @ University of Washington - Bothell campus. 
-        Graduating December 2025. Self-taught 2D/3D artist.`}
+        Graduating March 2026. Self-taught 2D/3D artist.`}
       </p>
       <div className="my-8">
         {/* <BlogPosts /> */}
